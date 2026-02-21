@@ -37,7 +37,7 @@ export default defineConfig({
   projects: [
     {
       name: 'api',
-      use: { browserName: 'firefox  ', ignoreHTTPSErrors: true },
+      use: { browserName: 'firefox', ignoreHTTPSErrors: true },
     },
 
     /* {
