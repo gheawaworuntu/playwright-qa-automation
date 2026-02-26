@@ -1,8 +1,7 @@
-import { expect } from '@playwright/test';
-
 class LoginPage {
     constructor(page) {
         this.page = page;
+        this.errorMessage = page.locator('//*[@id="login_button_container"]/div/form/div[3]/h3');
 
         //Locators
         this.usernameInput = page.locator('//*[@id="user-name"]');
@@ -21,12 +20,8 @@ class LoginPage {
         await this.loginButton.click();
     }
 
-    async showErrorMessage(text){
-        await expect(this.message).toContainText(text);
-    }
-
-    async showSuccessLogin(){
-        await expect(this.page).toHaveURL('https://www.saucedemo.com/inventory.html');
+    getErrorMessage(){
+        return this.errorMessage;
     }
 }
 
