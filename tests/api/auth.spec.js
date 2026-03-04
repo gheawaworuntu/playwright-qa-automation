@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { login } from '../helpers/auth.helper.js';
+import { login } from '../../helpers/auth.helper.js';
 
 test('Login success', async ({ request }) => {
 
