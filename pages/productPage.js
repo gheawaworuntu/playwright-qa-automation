@@ -4,7 +4,6 @@ class ProductPage {
         this.page = page;
         this.products = page.locator('.inventory_item');
         this.cart = page.locator('[data-test="shopping-cart-link"]');
-        this.productsName = page.locator('.inventory_item_name');
         this.cartBadge = page.locator('.shopping_cart_badge');
     }
 
@@ -16,8 +15,18 @@ class ProductPage {
             .click();
     }
 
+    async addMultipleProducts(products) {
+        for (const product of products) {
+            await this.addProductByName(product)
+        }
+    }
+
     getCartBadge() {
-        return this.cartBadge
+        return this.cartBadge;
+    }
+
+    async goToCart() {
+        await this.cart.click();
     }
 }
 

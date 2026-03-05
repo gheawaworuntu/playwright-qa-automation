@@ -10,10 +10,7 @@ test.describe('SauceDemo app Login Tests', () => {
             await loginPage.goto();
             await loginPage.login(data.username, data.password);
             await expect(loginPage.getErrorMessage()).toContainText(data.error);
-
-            //validasi link url tidak berubah
             await expect(page).toHaveURL('https://www.saucedemo.com/');
-
             //validasi tidak ada session cookie yang dibuat
             //const cookies = await page.context().cookies();
             //expect(cookies.length).toBe(0);
