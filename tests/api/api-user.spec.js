@@ -26,7 +26,7 @@ test('GET single user should return correct id', async ({request}) => {
 
 test('GET non-existing user should return 404', async ({ request }) => {
     const response = await request.get(
-        'https://dummyjson.com/users/1'
+        'https://dummyjson.com/users/9999'
     );
 
     expect(response.status()).toBe(404);
