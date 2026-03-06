@@ -105,39 +105,52 @@ playwright-qa-automation
 
 # Installation
 
-Clone the repository git clone:
-https://github.com/gheawaworuntu/playwright-qa-automation.git
+Clone the repository
 
-Navigate to project folder:
+git clone https://github.com/gheawaworuntu/playwright-qa-automation.git
+
 cd playwright-qa-automation
 
-Install dependencies:
+Install dependencies
+
 npm install
 
-Install Playwright browsers:
+Install Playwright browsers
+
 npx playwright install
+
 
 ---
 
 # Running Tests
 
-Run all tests:
+Run all tests
+
 npx playwright test
 
-Run in headed mode:
+Run tests in headed mode
+
 npx playwright test --headed
 
-Run specific test file:
+Run a specific test file
+
 npx playwright test tests/checkout.spec.js
 
 ---
 
 # Test Report
 
-Playwright automatically generates an HTML test report.
+Playwright automatically generates an HTML test report after test execution.
 
-View the report with:
+To view the report:
+
 npx playwright show-report
+
+Example report:
+
+![Playwright Test Report](assets/summary_report.png)
+
+![Playwright Test Report](assets/detail_test.png)
 
 # CI Automation
 
@@ -163,7 +176,7 @@ It demonstrates my ability to:
 # Author
 
 **Ghea Waworuntu** 
- 
+
 Junior Software Quality Assurance  
 
 Currently learning **Automation Testing with Playwright**
