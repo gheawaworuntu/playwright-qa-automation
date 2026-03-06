@@ -105,10 +105,9 @@ playwright-qa-automation
 
 # Installation
 
-Clone the repository git clone:
-https://github.com/gheawaworuntu/playwright-qa-automation.git
+Clone the repository
 
-Navigate to project folder:
+git clone https://github.com/gheawaworuntu/playwright-qa-automation.git
 cd playwright-qa-automation
 
 Install dependencies
@@ -118,7 +117,6 @@ npm install
 Install Playwright browsers
 
 npx playwright install
-
 
 ---
 
@@ -146,6 +144,12 @@ To view the report:
 
 npx playwright show-report
 
+Example report:
+
+![Playwright Test Report](assets/summary-report.png)
+
+![Playwright Test Report](assets/detail_test.png)
+
 # CI Automation
 
 This project includes **GitHub Actions workflow** to automatically run Playwright tests during repository updates.
@@ -170,7 +174,7 @@ It demonstrates my ability to:
 # Author
 
 **Ghea Waworuntu** 
-
+ 
 Junior Software Quality Assurance  
 
 Currently learning **Automation Testing with Playwright**
