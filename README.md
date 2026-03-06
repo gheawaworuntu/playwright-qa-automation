@@ -105,10 +105,10 @@ playwright-qa-automation
 
 # Installation
 
-Clone the repository
+Clone the repository git clone:
+https://github.com/gheawaworuntu/playwright-qa-automation.git
 
-git clone https://github.com/gheawaworuntu/playwright-qa-automation.git
-
+Navigate to project folder:
 cd playwright-qa-automation
 
 Install dependencies
@@ -145,12 +145,6 @@ Playwright automatically generates an HTML test report after test execution.
 To view the report:
 
 npx playwright show-report
-
-Example report:
-
-![Playwright Test Report](assets/summary_report.png)
-
-![Playwright Test Report](assets/detail_test.png)
 
 # CI Automation
 
