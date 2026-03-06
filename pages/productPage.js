@@ -5,6 +5,8 @@ class ProductPage {
         this.products = page.locator('.inventory_item');
         this.cart = page.locator('[data-test="shopping-cart-link"]');
         this.cartBadge = page.locator('.shopping_cart_badge');
+        this.menuNavigation = page.locator('#react-burger-menu-btn');
+        this.logoutButton = page.locator('[data-test="logout-sidebar-link"]')
     }
 
     async addProductByName(productName) {
@@ -27,6 +29,11 @@ class ProductPage {
 
     async goToCart() {
         await this.cart.click();
+    }
+
+    async logout(){
+        await this.menuNavigation.click();
+        await this.logoutButton.click();
     }
 }
 

@@ -8,9 +8,8 @@ This project demonstrates API automation testing using Playwright.
 - Node.js
 
 ## Test Coverage
-- GET all users
-- GET single user
-- Negative case validation
+- UI
+- API
 
 ## How to Run
 

@@ -5,6 +5,7 @@ class CheckoutPage {
         this.lastname = page.locator('[data-test="lastName"]')
         this.postalcode = page.locator('[data-test="postalCode"]')
         this.continuebutton = page.locator('[data-test="continue"]')
+        this.errorMessage = page.locator('[data-test="error"]')
     }
 
     async fillInformation(firstname, lastname, postalcode){
@@ -15,6 +16,10 @@ class CheckoutPage {
 
     async continueOrder(){
         await this.continuebutton.click()
+    }
+
+    getErrorMessage(){
+        return this.errorMessage;
     }
 }
 
