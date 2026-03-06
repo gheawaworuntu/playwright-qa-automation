@@ -9,3 +9,5 @@ class CheckoutCompletePage {
         return this.completeheader;
     }
 }
+
+export { CheckoutCompletePage }

@@ -11,7 +11,10 @@ class CheckoutPage {
         await this.firstname.fill(firstname);
         await this.lastname.fill(lastname);
         await this.postalcode.fill(postalcode);
-        await this.continuebutton.click();
+    }
+
+    async continueOrder(){
+        await this.continuebutton.click()
     }
 }
 
