@@ -146,7 +146,7 @@ npx playwright show-report
 
 Example report:
 
-![Playwright Test Report](assets/summary-report.png)
+![Playwright Test Report](assets/summary_report.png)
 
 ![Playwright Test Report](assets/detail_test.png)
 
