@@ -91,48 +91,66 @@ This project demonstrates several QA automation practices:
 ---
 
 # Project Structure
+
+```
 playwright-qa-automation
 │
-├── .github/workflows # CI automation
-├── helpers # reusable utilities
-├── pages # Page Object Model classes
-├── test-data # data-driven test data
-├── tests # UI and API test scripts
+├── .github/workflows      # CI automation
+├── assets                 # screenshot report
+├── helpers                # reusable utilities
+├── pages                  # Page Object Model classes
+├── test-data              # data-driven test data
+├── tests                  # UI and API test scripts
 │
 ├── playwright.config.js
 ├── package.json
 └── README.md
-
-# Installation
-
-Clone the repository
-
-git clone https://github.com/gheawaworuntu/playwright-qa-automation.git
-cd playwright-qa-automation
-
-Install dependencies
-
-npm install
-
-Install Playwright browsers
-
-npx playwright install
+```
 
 ---
 
-# Running Tests
+## Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/gheawaworuntu/playwright-qa-automation.git
+cd playwright-qa-automation
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Install Playwright browsers
+
+```bash
+npx playwright install
+```
+
+---
+
+## Running Tests
 
 Run all tests
 
+```bash
 npx playwright test
+```
 
 Run tests in headed mode
 
+```bash
 npx playwright test --headed
+```
 
 Run a specific test file
 
+```bash
 npx playwright test tests/checkout.spec.js
+```
 
 ---
 
